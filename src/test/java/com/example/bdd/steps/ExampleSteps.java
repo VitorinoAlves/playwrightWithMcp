@@ -27,6 +27,6 @@ public class ExampleSteps {
 
     @Then("the user is redirected to the intro page")
     public void verifyTheUrlPage() {
-        assertTrue(examplePage.isHeaderVisible());
+        examplePage.verifyRedirectedToIntroPage();
     }
 }

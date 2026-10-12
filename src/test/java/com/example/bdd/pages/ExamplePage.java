@@ -29,7 +29,17 @@ public class ExamplePage {
         getStarted.click();
     }
 
+    public Locator getPageHeader() {
+        return pageHeader;
+    }
+
+    public void verifyRedirectedToIntroPage() {
+        assertThat(page).hasURL(java.util.regex.Pattern.compile(".*/docs/intro.*"));
+        assertThat(pageHeader).isVisible();
+    }
+
     public Boolean isHeaderVisible() {
-        return pageHeader.isVisible();
+        assertThat(pageHeader).isVisible();
+        return true;
     }
 }
