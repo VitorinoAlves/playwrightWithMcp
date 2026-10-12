@@ -93,3 +93,5 @@ Reports are generated after test runs in the `target/` directory:
 
 ### 5. Code & Test Validation
 - When adding or modifying features, step definitions, or hooks, verify by running `mvn clean test-compile` or `mvn test`.
+
+https://automationexercise.com/
