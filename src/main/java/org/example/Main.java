@@ -34,4 +34,4 @@ public class Main {
                     new Page.GetByRoleOptions().setName("Installation"))).isVisible();
         }
     }
-}
+}

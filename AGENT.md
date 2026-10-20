@@ -29,6 +29,12 @@ playwrightWithMcp/
     │       └── Main.java                 # Standalone Playwright demo execution
     └── test/
         ├── java/com/example/bdd/
+        │   ├── api/                      # API client layer (clients & request/response DTOs)
+        │   │   ├── client/
+        │   │   │   └── UserApiClient.java
+        │   │   └── model/
+        │   │       ├── ApiResponse.java
+        │   │       └── CreateAccountRequest.java
         │   ├── hooks/
         │   │   └── PlaywrightHooks.java  # Lifecycle hooks (@Before, @After) managing Playwright, Browser, Context, Page
         │   ├── pages/

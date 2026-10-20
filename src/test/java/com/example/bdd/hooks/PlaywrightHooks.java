@@ -14,9 +14,13 @@ public class PlaywrightHooks {
     public void setUp() {
         playwright = Playwright.create();
         browser = playwright.chromium().launch(
-                new BrowserType.LaunchOptions().setHeadless(true)
+                new BrowserType.LaunchOptions().setHeadless(false)
         );
         context = browser.newContext();
+        context.route("**/*googleads*", Route::abort);
+        context.route("**/*doubleclick*", Route::abort);
+        context.route("**/*pagead*", Route::abort);
+        context.route("**/*adservice.google*", Route::abort);
         page = context.newPage();
     }
 
