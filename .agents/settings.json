@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "autoApproveCommands": [
+      "mvn test",
+      "mvn test *",
+      "mvn test-compile",
+      "mvn compile"
+    ]
+  }
+}
