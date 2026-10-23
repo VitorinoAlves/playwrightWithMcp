@@ -222,3 +222,4 @@ After running the tests, detailed Cucumber reports are generated in the `target/
 
 - **Automation Exercise**: [https://automationexercise.com/](https://automationexercise.com/) (E-commerce UI & REST API practice sandbox)
 - **Playwright Official Documentation**: [https://playwright.dev/](https://playwright.dev/)
+- **Reference**: https://testdino.com/blog/playwright-java-bdd
